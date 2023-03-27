@@ -4,4 +4,4 @@ Jogo simples estilo shot-up, criado enquando estudava um pouco sobre canvas e a 
 HTML + Javascript + PHP + Lib P5js
 
 
-![alt tag](screen.png)
+![alt tag](screenshot.png)
