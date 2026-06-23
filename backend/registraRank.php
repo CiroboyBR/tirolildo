@@ -4,6 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 include_once("conexaoMySQL.php");
 include_once("utils.php");
+$dataAtual = date('Y-m-d H:i:s');
 
 //$ip =  $_SERVER['REMOTE_ADDR'];
 
@@ -18,8 +19,7 @@ $qtdRegistros = mysqli_num_rows($resultadoNome);
 if($qtdRegistros < 1){
     if(isset($_POST['nome']))
         $resultadoIP = mysqli_query($conn, "INSERT INTO rank_tirolildo(nome, pontos) VALUES('$nome', $pontos)");  
-    
 } 
-else $resultadoIP = mysqli_query($conn, "UPDATE rank_tirolildo SET pontos=$pontos WHERE nome='$nome' and pontos < $pontos");  
+else $resultadoIP = mysqli_query($conn, "UPDATE rank_tirolildo SET pontos=$pontos, data='$dataAtual' WHERE nome='$nome' and pontos < '$pontos'");
 
 ?>
