@@ -6,7 +6,7 @@ Comandos:
 ESPAÇO - Atirar
 ASWD - Teclas de movimentação
 
-Link: [https://gerardao.com.br/ciro/tirolildo/](https://ciro.dev.br/jogos/tirolildo/)
+Link: https://ciro.dev.br/jogos/tirolildo/
 
 HTML + Javascript + PHP + Lib P5js
 
