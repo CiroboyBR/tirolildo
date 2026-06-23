@@ -394,7 +394,7 @@ function verificaColisaoJogador(jogador, arrayMonstros) {
             console.log('Duração: ' + ((new Date()).getTime() - dtInicio.getTime()) / 100);
             jogoIniciado = false; //para o jogo
             registraRank();
-            getListaRank();
+            
 
         }
     }
@@ -492,8 +492,9 @@ function registraRank() {
             'pontos': parseInt(pontos)
         },
         dataType: "html" // o formato dos dados da requisição. pode ser TEXT, HTML, XML, JSON, JSONP e SCRIPT
-    }).done(function (msg) {
-        //console.log(msg);
+    }).then(function (msg) {
+        console.log(msg);
+        getListaRank();
     })
 }
 
